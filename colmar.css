@@ -1,0 +1,656 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    color: #303030;
+    font-size: 16px;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+main {
+    position: relative;
+}
+
+h1 {
+    font-size: 50px;
+    color: black;
+    opacity: 0.7;
+}
+
+h4 {
+    font-size: 25px;
+    color: black;
+    opacity: 0.7;
+}
+
+.left {
+    width: 60%;
+    padding: 32px 24px;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+header {
+    background-color: #ffffff;
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    z-index: 1000;
+    justify-content: space-between;
+      
+  }
+
+  .start {
+    width: 100%;
+    display: flex;
+    background-color: lightgray;
+    position: relative;
+    
+}
+
+button {
+  height: 4rem;
+  background-color: #303030;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  flex-shrink: 1;
+  border-radius: 2px;
+  text-align: center;
+  width: 300px;
+}
+
+button:hover {
+  background-color: black;
+}
+
+.random_text {
+  text-align: center;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  font-size: 50px;
+  color: black;
+  opacity: 0.7;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+footer {
+  color: gray;
+  padding: 16px 24px;
+  border-top-style: solid;
+  border-top-color: lightgray;
+  border-top-width: 2px; 
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Desktop */
+
+  @media only screen and (min-width: 801px) {
+    .mobile {
+      display: none;
+    }
+
+
+    nav {
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 1.5rem;
+  }
+  
+
+#logo {
+    height: 4rem;
+    margin: 0 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+
+.desktop a {
+    text-decoration: none;
+    color: gray;
+}
+
+.desktop a img {
+    height: 4rem;
+}
+
+.desktop a .bold {
+    color: black;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.desktop a .light {
+    color: gray;
+    font-weight: lighter;
+    font-size: 32px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 1rem;
+  }
+
+  li {
+    margin-left: 1rem;
+    font-size: 1rem;
+  }
+  
+  .logo {
+    float: left;
+    height: 4rem;
+    margin: 0 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+
+  }
+
+ 
+
+ .start h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    padding-left: 0px;
+  }
+
+  .start h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-left: 0px;
+  }
+
+  .start .pic img {
+    width: 100%;
+    padding-top: 64px;
+  }
+
+  .start .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 24px;
+  }
+
+  .start a {
+      align-self: center;
+  }
+
+ 
+
+  .articles {
+      display: flex;
+      flex-direction: row;
+  }
+
+  .articles .featured {
+        /* width: 60%; */
+        flex-grow: 1;
+        flex-shrink: 1;
+        border-right-color: lightgray;
+        border-right-style: solid;
+        border-width: 2px;
+  }
+
+  .articles .featured .description {
+    line-height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 32px;
+    margin-bottom: 0px;
+}
+
+.articles .featured .description p {
+    line-height: 2rem;
+    margin-top: 24px;
+}
+
+
+.articles .featured .description .quote {
+    margin-bottom: 32px;
+}
+
+
+  .articles .featured .pic img {
+    width: 101.5%;
+    height: auto;
+}
+
+.articles .side {
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+
+}
+
+.articles .side .card {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+}
+
+.articles .side .card:hover {
+  background-color: lightgray;
+}
+
+.articles .side .card .pic {
+    width: 35%;
+    margin-left: 16px;
+}
+
+.articles .side .card .pic img{
+    width: 100%;
+    height: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+
+.articles .side .card .description {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+.articles .side .card .description p {
+    line-height: 2rem;
+}
+
+.articles .side .card .description a {
+    padding-top: 15px;
+    text-decoration: none;
+    color: lightskyblue;
+}
+
+
+.start_learning {
+  background-color: lightgray;
+}
+
+.start_learning .text {
+  padding-top: 32px;
+  text-align: center;
+}
+
+.start_learning .boxes {
+  padding-top: 16px;
+  padding-left: 56px;
+  padding-right: 20px;
+  padding-bottom: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.start_learning .boxes .box {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 16px;
+  width: 30%;
+  background-color: white;
+  height: 350px;
+}
+
+.start_learning .boxes .box img {
+  width: 100%;
+  height: auto;
+}
+
+.start_learning .boxes .box .text {
+  padding-left: 16px;
+  padding-top: 16px;
+  text-align: left;
+}
+
+.start_learning .boxes .box h1 {
+  font-size: 1.5rem;
+  padding-bottom: 8px;
+  color: black;
+  opacity: 0.9;
+}
+
+.start_learning .boxes .box h2 {
+  font-size: 1rem;
+  padding-top: 16px;
+  padding-bottom: 0px;
+  font-weight: lighter;
+  color: gray;
+}
+
+.start_learning .boxes .box p {
+  font-size: 1rem;
+  padding-top: 0px;
+  padding-bottom: 24px;
+  color: gray;
+  line-height: 1.5rem;
+  width: 90%;
+}
+
+.thesis .featured .video video {
+  width: 732px;
+  height: auto;
+}
+
+.thesis {
+  display: flex;
+  flex-direction: row;
+}
+
+.thesis .text {
+  width: 732px;
+}
+
+.thesis .text h1 {
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.thesis .featured .description {
+  width: 732px;
+}
+
+.thesis .featured .description h1 {
+  padding-top: 24px;
+}
+
+.thesis .featured .description p {
+  line-height: 2rem;
+  padding-top: 8px;
+  color: gray;
+}
+
+.thesis .side {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+
+}
+
+.thesis .side .card {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 16px;
+}
+
+.thesis .side .card:hover {
+  background-color: lightgray;
+}
+
+.thesis .side .card .pic {
+  width: 35%;
+  margin-left: 16px;
+}
+
+.thesis .side .card .pic img {
+  width: 100%;
+  height: auto;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+
+.thesis .side .card .description {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+}
+
+.thesis .side .card .description p {
+  line-height: 2rem;
+  color: gray;
+}
+
+.thesis .side .card .description a {
+  padding-top: 15px;
+}
+
+footer .items a {
+  color: gray;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: auto;
+  text-decoration: none;
+  padding-left: 6px;
+}
+
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 800px) {
+  .desktop {
+    display: none;
+  }
+
+  html, body {
+    overflow-x: hidden;
+  }
+
+  h1 {
+    line-height: 3rem;
+  }
+
+  h4 {
+    line-height: 2rem;
+  }
+
+  p {
+    line-height: 2rem;
+  }
+
+  button {
+    width: 100%;
+    margin: 0px; 
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 1.5rem;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .start {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .start .pic {
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+
+.start .pic img {
+    width: 100%;
+    padding-bottom: 0px;
+    margin: 0px;
+  }
+
+  .start .desc h1 {
+    padding: 32px 16px;
+    margin: 0px;
+  }
+
+  .start .desc h4 {
+    padding: 0px 16px;
+    margin: 0px;
+  }
+
+  .start .desc button {
+    margin-bottom: 32px;
+    margin-top: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+    width: 90%;
+    background-color: gray;
+    color: white;
+  }
+
+  .start .desc button:hover {
+    background-color: black;
+  }
+
+  .start .desc {
+    
+    padding-left: 16px;
+    padding-bottom: 16px;
+  }
+
+
+.side {
+  margin: 0px;
+  padding: 0px;
+}
+
+.side .card {
+  padding: 0px;
+  margin: 8px;
+}
+
+.side .card:hover {
+  background-color: lightgray;
+}
+
+.side .card img {
+  width: 100%;
+}
+
+.side .card .description {
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 32px;
+
+}
+
+.side .card .description h2 {
+  font-size: 2rem;
+  opacity: 0.7;
+}
+
+.side .card .description p {
+  font-size: 1.2rem;
+  color: gray;
+}
+
+.side .card .description a {
+  text-decoration: none;
+  color: lightskyblue;
+}
+
+.start_learning {
+  border-top-style: solid;
+  border-top-color: lightgray;
+  border-top-width: 2px;
+  padding-top: 8px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: lightgray;
+  padding-bottom: 32px;
+}
+
+.start_learning h1 {
+  color: black;
+  opacity: 0.7;
+  text-align: center;
+}
+
+.start_learning .boxes {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.start_learning .boxes .box {
+  background-color: lightgray;
+  color: black;
+  opacity: 0.7;
+  margin: 4px 16px;
+}
+
+.start_learning .boxes .box:hover {
+  background-color: black;
+  opacity: 0.7;
+}
+
+.start_learning .boxes .box:hover h1 {
+  color: white;
+}
+
+.start_learning .boxes .box h1 {
+  float: left;
+  font-size: 1.5rem;
+  color: black;
+  opacity: 0.9;
+  padding: 0px;
+  margin-bottom: 24px;
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+.random_text {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+}
+
+.thesis {
+  margin-right: -24px;
+  padding-right: -24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.thesis .featured .video {
+  width: 150%;
+  height: auto;
+  
+}
+
+.thesis .featured .video video {
+  width: 106%;
+  height: auto;
+  margin-right: -24px;
+  padding-right: -24px;
+  margin-left: -24px;
+  padding-left: -24px;
+
+}
+
+}
